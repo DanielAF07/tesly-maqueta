@@ -100,7 +100,7 @@ body {
 
 .car {
     background: #F0F0F0;
-    width: 35vw;
+    width: 34%;
     grid-column: 1;
     position: relative;
     height: 100%;
@@ -112,7 +112,7 @@ body {
     /* background: blue; */
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 66%;
     /* border: 1px solid red; */
 }
 
