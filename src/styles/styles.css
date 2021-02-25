@@ -104,7 +104,8 @@ body {
     grid-column: 1;
     position: relative;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .map-side {
