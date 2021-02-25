@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Tesly</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="car">
+            <div class="car-status">
+                <div class="speed-number">63</div>
+                <div class="status-bar">
+                    <div class="transmission">
+                        <p>P</p>
+                        <p>R</p>
+                        <p>N</p>
+                        <p>D</p>
+                    </div>
+                    <p class="speed-unity">KM/H</p>
+                    <div class="battery">
+                        <p class="battery-km">362 km</p>
+                        <img src="/src/assets/car-status/battery.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="car-view">
+                <div class="car-symbols">
+                    <img id="steering-wheel"src="/src/assets/symbols/steering wheel.svg" alt="">
+                    <img id="h" src="/src/assets/symbols/h.svg" alt="">
+                </div>
+                <img class="car-img" src="/src/assets/car-view.png" alt="">
+                <div class="last-charge">
+                    <img class="menu-dots" src="/src/assets/menu dots.svg" alt="">
+                    <p class="hour">Since 1:34 PM</p>
+                    <div class="charge-info">
+                        <div class="datos">
+                            <div class="dato">
+                                11.9
+                                <span>km</span>
+                            </div>
+                            <div class="dato">
+                                16
+                                <span>min</span>
+                            </div>
+                            <div class="dato">
+                                11
+                                <span>Wh/km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">Since last charge</p>
+                </div>
+                <img class="pages" src="/src/assets/pages.svg" alt="">
+            </div>
+        </div>
+        <div class="map-side">
+            <div class="bar">
+                <div class="notifications">
+                    <img class="bar-item" src="/src/assets/bar/lock.svg" alt="">
+                    <span class="bar-item">10:21 AM</span>
+                    <span class="bar-item">17 ºC</span>
+                    <img class="bar-item" src="/src/assets/bar/Tesla Logo.svg" alt="">
+                </div>
+                <div class="status">
+                    <img src="/src/assets/bar/bluetooth.svg" alt="" class="bar-item">
+                    <img src="/src/assets/bar/cell signal.svg" alt="" class="bar-item">
+                </div>
+            </div>
+            <div class="navigation">
+                <div id="directions-button" class="nav-bar">
+                    <div class="nav">
+                        <img src="/src/assets/nav-bar/navigate icon.svg" alt="">
+                        <span>Navigate</span>
+                    </div>
+                    <img class="arrows" src="/src/assets/nav-bar/arrow.svg" alt="">
+                </div>
+                <div id="directions-menu" class="directions hidden">
+                    <div class="direction">
+                        <img src="/src/assets/nav-bar/right turn.svg" alt="">
+                        <div class="road-info">
+                            <p class="distance">1.5 mi</p>
+                            <p class="road-name">Exit 87</p>
+                        </div>
+                    </div>
+                    <div class="direction">
+                        <img src="/src/assets/nav-bar/left turn.svg" alt="">
+                        <div class="road-info">
+                            <p class="distance">.75 mi</p>
+                            <p class="road-name">Highway 400</p>
+                        </div>
+                    </div>
+                    <div class="direction">
+                        <img src="/src/assets/nav-bar/cross.svg" alt="">
+                        <div class="road-info">
+                            <p class="distance">18 mi</p>
+                            <p class="road-name">Mansell Rd</p>
+                        </div>
+                    </div>
+                    <div class="direction">
+                        <img src="/src/assets/nav-bar/destination.svg" alt="">
+                        <div class="road-info">
+                            <p class="distance">500ft</p>
+                            <p class="road-name">Electricity Charger</p>
+                        </div>
+                    </div>
+                    <p class="cancel-trip" >Cancel trip</p>
+                </div>
+            </div>
+            <img src="/src/assets/gear.svg" alt="" class="settings">
+            <img class="map" src="/src/assets/map/map.png" alt="">
+            <img class="route" src="/src/assets/map/route-blue.png" alt="">
+            <img class="arrow" src="/src/assets/map/en route.png" alt="">
+        </div>  
+    </div>
+    <footer class="bottom-bar">
+        <img src="/src/assets/bottom-bar/model3-icon.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/defrost.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/heater.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/seat.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/fan.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/Frame 9.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/seat-1.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/music.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/phone.svg" class="bottom-bar-icon" alt="Volume">
+        <img src="/src/assets/bottom-bar/volume.svg" class="bottom-bar-icon" alt="Volume">
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.app-container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    margin: 0;
+    padding: 0;
+    height: 89.5vh;
+    position: relative;
+}
+
+.car-status {
+    padding-top: 40px;
+    /* background: rgba(0,0,0,0.2); */
+}
+
+.speed-number {
+    text-align: center;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 98px;
+}
+
+.status-bar {
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    margin: 0 24px;
+    display: flex;
+    grid-auto-flow: column;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    justify-content:space-between
+}
+
+.transmission {
+    display: inline-block;
+}
+
+.speed-unity {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    color: rgba(0,0,0,0.5);
+    margin-right: -15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.battery {
+    display: inline-block;
+    text-align: end;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.battery img {
+    /* display: none; */
+    vertical-align: middle;
+}
+
+.battery-km {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding-right: 8px;
+}
+
+.transmission p {
+    display: inline-block;
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.transmission p:last-child {
+    color: black;
+}
+
+.car {
+    background: #F0F0F0;
+    width: 34vw;
+    overflow: hidden;
+}
+
+.map-side {
+    background: blue;
+    width: 66vw;
+    overflow: hidden;
+    position: relative;
+}
+.bottom-bar {
+    position: fixed;
+    display: grid;
+    grid-auto-flow: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+    background: black;
+    /* display: none; */
+}
+
+.bottom-bar-icon {
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+.car-view {
+    margin: 0 24px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.car-symbols {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.car-img {
+    margin-top: -36px;
+}
+
+#h {
+    position: relative;
+    right: 0;
+}
+
+#steering-wheel {
+    position: relative;
+    left: 0;
+}
+
+.last-charge {
+    background: white;
+    box-shadow: 0px 4px 25px rgba(0,0,0, 0.25);
+    border-radius: 24px;
+    position: relative;
+    margin-top: -32.56px;
+    /* padding-bottom: 56px; */
+}
+
+.hour {
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.charge-info {
+    /* border: 1px solid purple; */
+    margin: 0 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    margin-top: 32px;
+}
+
+.datos {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 55.5px;
+    /* border: 1px solid black; */
+}
+
+.dato {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.dato span {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 17px;
+    display: block;
+    color: rgba(0,0,0,0.5);
+    padding-top: 8px;
+}
+
+.text {
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-bottom: 16px;
+    margin-block-end: 0;
+}
+
+.menu-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px;
+}
+.pages {
+    padding: 20px 0;
+}
+
+.map {
+    position: relative;
+    min-width: 70vw;
+    min-height: 90vh;
+}
+
+.arrow {
+    position: absolute;
+    right: 570px;
+    top: 497px;
+}
+
+.route {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-weight: 600;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.bar .status {
+    display: flex;
+    align-items: center;
+}
+
+.bar-item:not(:last-child){
+    padding-right: 32px;
+}
+
+.map-side .settings {
+    position: absolute;
+    background: #F0F0F0;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    bottom: 63px;
+    right: 63px;
+    z-index: 20;
+}
+
+.navigation {
+    position: absolute;
+    top: 76px;
+    left: 43px;
+    z-index: 11;
+}
+
+.nav-bar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    width: 346px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;   
+}
+
+.nav img {
+    margin-right: 16px;
+}
+.nav span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: rgba(0,0,0,0.5)
+}
+
+.bottom-bar img:nth-child(1) {
+    cursor: pointer;
+}
+
+.directions {
+    background:rgba(240,240,240);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 12px;
+    opacity: 100%;
+    transition: opacity 0.2s, display 0.4s;
+}
+
+.direction {
+    display: flex;
+}
+
+.direction p {
+    margin: 0;
+}
+
+.direction img {
+    display: inline-block;
+    padding: 25px;
+}
+
+.direction .road-info {
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.directions .cancel-trip {
+    text-transform: uppercase;
+    background: rgb(192,192,192);
+    text-align: center;
+    padding: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.road-info {
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.road-info .distance {
+    color: black;
+    font-weight: 400;
+}
+
+.road-info .road-name {
+    color: rgba(0,0,0,0.4);
+    font-weight: 500;
+}
+
+.hidden {
+    opacity: 0%;
+    height: 0;
+}
+
