@@ -3,3 +3,4 @@ const toggleMenu = (e) => {
 }
 
 window['directions-button'].onclick = toggleMenu
+cancelTrip.onclick = toggleMenu

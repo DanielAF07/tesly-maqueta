@@ -94,7 +94,7 @@ body {
 }
 
 .map-side {
-    background: blue;
+    /* background: blue; */
     width: 66vw;
     overflow: hidden;
     position: relative;
@@ -310,7 +310,7 @@ body {
     border-top-right-radius: 12px;
     margin-top: 12px;
     opacity: 100%;
-    transition: opacity 0.2s, display 0.4s;
+    transition: opacity 0.2s;
 }
 
 .direction {
@@ -340,6 +340,7 @@ body {
     font-size: 20px;
     line-height: 25px;
     margin: 0;
+    cursor: pointer;
 }
 
 .road-info {
@@ -358,7 +359,7 @@ body {
 }
 
 .hidden {
-    opacity: 0%;
     height: 0;
+    opacity: 0%;
 }
 
