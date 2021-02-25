@@ -2,15 +2,26 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px;
+    overflow: hidden;
 }
 
 .app-container {
-    display: flex;
     /* flex-direction: row-reverse; */
     margin: 0;
     padding: 0;
-    height: 89.5vh;
-    position: relative;
+    /* position: relative; */
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .car-status {
@@ -26,7 +37,7 @@ body {
 }
 
 .status-bar {
-    /* border: 1px solid red; */
+    /*  */
     border-bottom: 1px solid rgba(0,0,0,0.5);
     margin: 0 24px;
     display: flex;
@@ -89,38 +100,39 @@ body {
 
 .car {
     background: #F0F0F0;
-    width: 34vw;
-    overflow: hidden;
+    width: 35vw;
+    grid-column: 1;
+    position: relative;
+    height: 100%;
+    overflow: scroll;
 }
 
 .map-side {
     /* background: blue; */
-    width: 66vw;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    /* border: 1px solid red; */
 }
+
 .bottom-bar {
-    position: fixed;
+    grid-column: 1/2;
+    grid-row: 2;
     display: grid;
     grid-auto-flow: column;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 0 40px;
+    height: 100%;
     background: black;
-    /* display: none; */
 }
 
 .bottom-bar-icon {
     margin: auto;
     padding-top: 22px;
     padding-bottom: 20px;
-    /* border: 1px solid red; */
 }
 
 .car-view {
     margin: 0 24px;
-    /* border: 1px solid red; */
     text-align: center;
 }
 
@@ -132,6 +144,11 @@ body {
 
 .car-img {
     margin-top: -36px;
+    max-width: 380px;
+    max-height: 280px;
+    width: 28vw;
+    height: 25vh;
+    object-fit: contain;
 }
 
 #h {
@@ -150,7 +167,6 @@ body {
     border-radius: 24px;
     position: relative;
     margin-top: -32.56px;
-    /* padding-bottom: 56px; */
 }
 
 .hour {
@@ -158,10 +174,10 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    /* height: 1vh; */
 }
 
 .charge-info {
-    /* border: 1px solid purple; */
     margin: 0 24px;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(0,0,0,0.5);
@@ -173,7 +189,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 55.5px;
-    /* border: 1px solid black; */
 }
 
 .dato {
@@ -210,9 +225,11 @@ body {
 }
 
 .map {
-    position: relative;
-    min-width: 70vw;
-    min-height: 90vh;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .arrow {
@@ -361,5 +378,36 @@ body {
 .hidden {
     height: 0;
     opacity: 0%;
+}
+
+.menu-settings {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    height: 80vh;
+    background: rgb(240,240,240);
+    margin: 12px;
+    margin-top: 0;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.menu-settings .menus {
+    height: 100%;
+    background: white;
+    width: 20vw;
+}
+
+.menus {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10%;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
 }
 
